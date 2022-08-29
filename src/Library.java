@@ -68,4 +68,15 @@ class Library {
             System.out.println("Book \"" + title + "\" not found");
         }
     }
+
+    public String toString() {
+        var sb = new StringBuilder();
+
+        for (Book book : booksArray) {
+            if (book != null) {
+                sb.append(book).append("\n");
+            }
+        }
+        return sb.toString();
+    }
 }

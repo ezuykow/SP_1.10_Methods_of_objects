@@ -1,3 +1,5 @@
+import java.net.Socket;
+
 public class MethodsOfObjects {
     public static void main(String[] args) {
         //Easy-level
@@ -37,6 +39,9 @@ public class MethodsOfObjects {
         System.out.println("\nChange year of writing by title (The Stand):");
         library.changeYearOfWriting("The Stand", 2020);
         library.printBookByTitle("The Stand");
+
+        System.out.println("\nTask of lesson 1.10:");
+        System.out.println(library);
     }
 
     private static void addBookToArray(Book book, Book[] books) {
